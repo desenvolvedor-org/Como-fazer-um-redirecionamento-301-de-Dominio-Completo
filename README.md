@@ -23,3 +23,5 @@ RewriteRule ^(.*)$ https://dominionovo.org/$1 [L,R=301]
 ### passo 2
 crie uma pagina 404.php e coloque um codigo de redirecionamento:<br>
 ``<meta http-equiv="refresh" content="0;url='https://novodominio.org<?php echo $_SERVER["REQUEST_URI"];?>'">``
+
+talvez por causa do https instalado em outro sevidor a migraçao dê erros nas primeiras horas, depois funcionara perfeitamente.
